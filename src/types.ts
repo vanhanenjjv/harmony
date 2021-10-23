@@ -1,5 +1,5 @@
 export type VoiceChannel = 
-  { type: 'voice',
+  { type: 'voice'
     id: number 
     name: string }
 
