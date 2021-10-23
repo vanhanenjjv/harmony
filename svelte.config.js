@@ -14,8 +14,7 @@ const config = {
 			fallback: null
 		}),
 		paths: {
-			base: '/harmony',
-			assets: '/harmony'
+			base: '/harmony'
 		}
 	}
 }
