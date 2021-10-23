@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="modulepreload" href="/harmony/_app/start-45d9c0f8.js">
+		<link rel="modulepreload" href="/harmony/_app/chunks/vendor-23a6fc27.js">
+		<link rel="modulepreload" href="/harmony/_app/pages/__layout.svelte-e3e426bc.js">
+		<link rel="modulepreload" href="/harmony/_app/chunks/stores-dbc02dca.js">
+		<link rel="modulepreload" href="/harmony/_app/pages/guilds/__layout.svelte-2b6a1123.js">
+		<link rel="modulepreload" href="/harmony/_app/pages/guilds/[guild]/channels/[channel].svelte-866d3a5d.js">
+		<link rel="stylesheet" href="/harmony/_app/assets/start-c1dab058.css">
+		<link rel="stylesheet" href="/harmony/_app/assets/pages/__layout.svelte-bbe1f898.css">
+
+		<script type="module">
+			import { start } from "/harmony/_app/start-45d9c0f8.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"/harmony","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/harmony/_app/pages/__layout.svelte-e3e426bc.js"),
+						import("/harmony/_app/pages/guilds/__layout.svelte-2b6a1123.js"),
+						import("/harmony/_app/pages/guilds/[guild]/channels/[channel].svelte-866d3a5d.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fguilds\u002F1\u002Fchannels\u002F3",
+						query: new URLSearchParams(""),
+						params: {guild:"1",channel:"3"}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<div id="wrapper" class="bg-gray-500 flex"><div class="inline-flex flex-col p-3 gap-3 bg-gray-800 h-full"><a href="/guilds/1"><img class="w-14 h-14 hover:rounded-2xl rounded-full" src="data:image/webp;base64,UklGRm4CAABXRUJQVlA4IGICAAAwDwCdASpgAGAAPm0uk0WkIqGZWqwAQAbEs4Bqksa+Az1/PRPFLfT+wIMCVdzLfGP9PewT+rfWM9EA2rYuDOIjHuIvUe+47tDuA58w8QpfmT23VOlpEgGiouitWGswpJDgfG7LhcrBLxqp5npsYhcn+fz7GjOw6M/YaZihvJqQsQAAAP7wxAv8XdiOMnh/m3kbfQxndubaZ+8n1i+sMhXYpNTfn45vqfIbZeOC/U/Q742aF7/2SsCq6DjZrRlpPQLw1qVnOwFaLDAJu622UKQHmSbly4TTbB8gfnsbA5NW1/1hT/7XAwDl/oyFuBYJL65IUh+pArOyGCb0atFol+34QyA52zNKznZBsIBBSJ6NCxZBKa8ncHAYgKKQZg4y32xO8sJq5fXnLW+48H2WCoaGmv9vmIlRa98lhjweMDzjt2LJf7z8i49EuGP13AB2GajWRB8d5O2HSb5flaHMMhFKPH5FM9AXS3+171wi8kb/tTYcTdeYJnbBRWPh8eFRWemrandI9fXUaF922w0jDfZt6VFSYZMM7MB8C9yjQ7/dFkwB7md9PYf6cbg0noyOBOs3D8zWOe1wDyGkkuWo6DkHxBf8AnUyuRCBqWkovh/BjUQTluipseM5TDqcKHQT4BFmD07XCVsrQfuGJbaMxa0VoB5C+KO1/rX8nuTxqb1Yufv67wbQ8rvjpX93dy33HKgnRUruNeABJnToD49LkASJSi2+6PTHhso5zPtPsFDtrOynx4Mex/jj1i9ZDzWzX9s01UwhUv9RXlRrgkOfU4dETeKMdxtF59+bakOLJpsn8AAA" alt="Kuisti"></a><a href="/guilds/2"><img class="w-14 h-14 hover:rounded-2xl rounded-full" src="data:image/webp;base64,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" alt="Upantori"></a></div>
+  <div class="flex"><div class="w-64 bg-gray-700"><div class="p-4 border-b border-black flex justify-between hover:bg-gray-600"><h1 class="text-white font-semibold">Kuisti</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></div>
+  <div class="px-2 py-4 flex gap-1 flex-col"><a href="/guilds/1/channels/1"><div class="flex gap-2 items-center hover:bg-gray-600 p-1 text-gray-400 hover:text-gray-300 rounded"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+    <span>salmarikengät</span></div></a><a href="/guilds/1/channels/2"><div class="flex gap-2 items-center hover:bg-gray-600 p-1 text-gray-400 hover:text-gray-300 rounded"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+    <span>Sauna</span></div></a><a href="/guilds/1/channels/3"><div class="flex gap-2 items-center hover:bg-gray-600 p-1 text-gray-400 hover:text-gray-300 rounded"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg>
+    <span>yleinen</span></div></a><a href="/guilds/1/channels/4"><div class="flex gap-2 items-center hover:bg-gray-600 p-1 text-gray-400 hover:text-gray-300 rounded"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg>
+    <span>nutturannokka</span></div></a></div></div></div>
+</div>
+
+
+
+			
+		</div>
+	</body>
+</html>
