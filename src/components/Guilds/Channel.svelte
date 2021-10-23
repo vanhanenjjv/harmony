@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths'
   import { page } from '$app/stores'
 
   export let id: number
@@ -8,7 +9,7 @@
   $: guild = $page.params.guild
 </script>
 
-<a href={`/guilds/${guild}/channels/${id}`}>
+<a href={`${base}/guilds/${guild}/channels/${id}`}>
   <div class="flex gap-2 items-center hover:bg-gray-600 p-1 text-gray-400 hover:text-gray-300 rounded">
     {#if type === 'text'}
       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
