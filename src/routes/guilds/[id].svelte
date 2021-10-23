@@ -1,14 +1,11 @@
 <script lang="ts">
   import { page } from '$app/stores'
-  import { onMount } from 'svelte'
 
-  let id: string
+  import Channels from '../../components/Guilds/Channels.svelte'
 
-  onMount(() => {
-    id = $page.params.id
-  })
+  $: id = $page.params.id
 </script>
 
-<div>
-  {id}
+<div class="flex">
+  <Channels />
 </div>

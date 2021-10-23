@@ -2,7 +2,7 @@
   import Sidebar from '../components/Sidebar.svelte'
 </script>
 
-<div id="wrapper" class="bg-gray-600 flex">
+<div id="wrapper" class="bg-gray-500 flex">
   <Sidebar />
   <slot></slot>
 </div>
