@@ -3,8 +3,9 @@
 
   import Channels from '../../components/Guilds/Channels.svelte'
 
-  $: id = $page.params.id
+  $: guild = $page.params.guild
 </script>
+
 
 <div class="flex">
   <Channels />
