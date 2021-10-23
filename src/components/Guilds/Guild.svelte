@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths'
   import { page } from '$app/stores'
 
   export let id: number
@@ -8,7 +9,7 @@
   $: isActive = $page.path.endsWith(`/guilds/${id}`)
 </script>
 
-<a href={`/guilds/${id}`}>
+<a href={`${base}/guilds/${id}`}>
   <img 
     class="w-14 h-14 hover:rounded-2xl"
     class:rounded-full={!isActive}
