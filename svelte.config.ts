@@ -1,8 +1,9 @@
+import { Config } from '@sveltejs/kit'
+
 import preprocess from 'svelte-preprocess'
 import adapter from '@sveltejs/adapter-static'
 
-/** @type {import('@sveltejs/kit').Config} */
-export default {
+const config: Config = {
 	preprocess: preprocess({
     postcss: true
   }),
@@ -13,6 +14,11 @@ export default {
 			pages: 'build',
 			assets: 'build',
 			fallback: null
-		})
+		}),
+		paths: {
+			base: '/harmony'
+		}
 	}
 }
+
+export default config
