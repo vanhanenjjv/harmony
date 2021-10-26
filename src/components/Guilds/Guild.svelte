@@ -16,7 +16,7 @@
 </script>
 
 <div on:click={goto} 
-  class="w-14 h-14 hover:rounded-2xl cursor-pointer overflow-hidden"
+  class="w-14 h-14 hover:rounded-2xl cursor-pointer overflow-hidden flex-shrink-0"
   class:rounded-full={!isActive}
   class:rounded-2xl={isActive}>
   <img src={logo} alt={name} />
