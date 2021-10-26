@@ -14,7 +14,7 @@ const config = {
 			fallback: null
 		}),
 		paths: {
-			// base: '/harmony'
+			base: 'GITHUB_WORKFLOW' in process.env ? '/harmony' : '/'
 		}
 	}
 }
