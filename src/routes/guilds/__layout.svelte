@@ -9,4 +9,5 @@
 
 <div class="flex">
   <Channels />
+  <slot />
 </div>

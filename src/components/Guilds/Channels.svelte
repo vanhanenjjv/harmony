@@ -1,20 +1,17 @@
 <script lang="ts">
   import type * as types from '../../types'
 
-  import Channel from './Channel.svelte'
-  import Guild from './Guild.svelte'
+  import { state } from '../../state'
 
-  const channels = Array.of<types.Channel>(
-    { id: 1, type: 'voice', name: 'salmarikengät' },
-    { id: 2, type: 'voice', name: 'Sauna' },
-    { id: 3, type: 'text', name: 'yleinen' },
-    { id: 4, type: 'text', name: 'nutturannokka' }
-  )
+  import Channel from './Channel.svelte'
+
+  $: guildName = $state.guilds.filter(g => g.id === $state.openGuild)[0].name
+  $: channels = $state.guilds.filter(g => g.id === $state.openGuild)[0].channels
 </script>
 
 <div class="w-64 bg-gray-700">
   <div class="p-4 border-b border-black flex justify-between hover:bg-gray-600">
-    <h1 class="text-white font-semibold">Kuisti</h1>
+    <h1 class="text-white font-semibold">{guildName}</h1>
     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
     </svg>

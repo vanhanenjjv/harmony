@@ -1,19 +1,23 @@
 <script lang="ts">
-  import { base } from '$app/paths'
-  import { page } from '$app/stores'
+  import { state } from '../../state'
 
   export let id: number
   export let logo: string
   export let name: string
 
-  $: isActive = $page.path.endsWith(`/guilds/${id}`)
+  $: isActive = $state.openGuild === id
+
+  function goto() {
+    state.update(state => ({
+      ...state,
+      openGuild: id
+    }))
+  }
 </script>
 
-<a href={`${base}/guilds/${id}`}>
-  <img 
-    class="w-14 h-14 hover:rounded-2xl"
-    class:rounded-full={!isActive}
-    class:rounded-2xl={isActive}
-    src={logo} 
-    alt={name} />
-</a>
+<div on:click={goto} 
+  class="w-14 h-14 hover:rounded-2xl cursor-pointer overflow-hidden"
+  class:rounded-full={!isActive}
+  class:rounded-2xl={isActive}>
+  <img src={logo} alt={name} />
+</div>

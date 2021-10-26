@@ -11,3 +11,10 @@ export type TextChannel =
 export type Channel =
   | VoiceChannel
   | TextChannel
+
+export type Guild = 
+  { id: number
+    name: string
+    logo: string
+    channels: Channel[] 
+    openTextChannel: number }
