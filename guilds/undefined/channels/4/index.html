@@ -13,8 +13,9 @@
 		<link rel="modulepreload" href="/harmony/_app/chunks/paths-28a87002.js">
 		<link rel="modulepreload" href="/harmony/_app/pages/__layout.svelte-890da69a.js">
 		<link rel="modulepreload" href="/harmony/_app/chunks/state-7580c621.js">
-		<link rel="modulepreload" href="/harmony/_app/pages/index.svelte-0172626d.js">
+		<link rel="modulepreload" href="/harmony/_app/pages/guilds/__layout.svelte-45142bbb.js">
 		<link rel="modulepreload" href="/harmony/_app/chunks/Channels-5a7df336.js">
+		<link rel="modulepreload" href="/harmony/_app/pages/guilds/[guild]/channels/[channel].svelte-2f91b06a.js">
 		<link rel="stylesheet" href="/harmony/_app/assets/start-c1dab058.css">
 		<link rel="stylesheet" href="/harmony/_app/assets/pages/__layout.svelte-48c79c59.css">
 
@@ -33,13 +34,14 @@
 					error: null,
 					nodes: [
 						import("/harmony/_app/pages/__layout.svelte-890da69a.js"),
-						import("/harmony/_app/pages/index.svelte-0172626d.js")
+						import("/harmony/_app/pages/guilds/__layout.svelte-45142bbb.js"),
+						import("/harmony/_app/pages/guilds/[guild]/channels/[channel].svelte-2f91b06a.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "\u002F",
+						path: "\u002Fguilds\u002Fundefined\u002Fchannels\u002F4",
 						query: new URLSearchParams(""),
-						params: {}
+						params: {guild:"undefined",channel:"4"}
 					}
 				}
 			});
@@ -56,7 +58,7 @@
   <div class="px-2 py-4 flex gap-1 flex-col"><a href="/harmony/guilds/undefined/channels/3"><div class="flex gap-2 items-center hover:bg-gray-600 p-1 text-gray-400 hover:text-gray-300 rounded"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
     <span>salmarikengät</span></div></a><a href="/harmony/guilds/undefined/channels/4"><div class="flex gap-2 items-center hover:bg-gray-600 p-1 text-gray-400 hover:text-gray-300 rounded"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg>
     <span>nutturannokka</span></div></a></div></div>
-  </div>
+  <h1>nutturannokka</h1></div>
 </div>
 
 
