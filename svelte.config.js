@@ -1,6 +1,8 @@
 import preprocess from 'svelte-preprocess'
 import adapter from '@sveltejs/adapter-static'
 
+const basePath = 'GITHUB_WORKFLOW' in process.env ? '/harmony' : undefined
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	preprocess: preprocess({
@@ -14,7 +16,7 @@ const config = {
 			fallback: null
 		}),
 		paths: {
-			base: 'GITHUB_WORKFLOW' in process.env ? '/harmony' : '/'
+			base: basePath
 		}
 	}
 }
